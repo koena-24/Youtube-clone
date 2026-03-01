@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+  <meta charset="UTF-8">
+  <title>FakeTube</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+  <div class="nav-left">
+    <h2 class="logo">FakeTube</h2>
+  </div>
+
+  <div class="nav-center">
+    <input type="text" id="searchInput" placeholder="Search">
+    <button id="searchBtn">Search</button>
+  </div>
+
+  <div class="nav-right">
+    <button id="darkModeToggle">🌙</button>
+    <img src="https://i.pravatar.cc/40" class="profile" id="profileBtn">
+  </div>
+</header>
+
+<div class="container">
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <p>🏠 Home</p>
+    <p>🔥 Trending</p>
+    <p>📺 Subscriptions</p>
+    <p>📚 Library</p>
+    <p>🕒 History</p>
+  </aside>
+
+  <!-- VIDEO GRID -->
+  <main class="video-grid" id="videoGrid">
+
+    <!-- VIDEO CARD -->
+    <div class="video" data-title="frontend developer">
+      <img src="https://picsum.photos/500/300?1" class="thumbnail">
+      <div class="video-info">
+        <img src="https://i.pravatar.cc/35?1" class="channel-img">
+        <div>
+          <h4>How to Become a Frontend Developer</h4>
+          <p>Code Academy</p>
+          <p>1.2M views • 2 days ago</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="video" data-title="html css course">
+      <img src="https://picsum.photos/500/300?2" class="thumbnail">
+      <div class="video-info">
+        <img src="https://i.pravatar.cc/35?2" class="channel-img">
+        <div>
+          <h4>HTML & CSS Full Course</h4>
+          <p>Dev Simplified</p>
+          <p>850K views • 1 week ago</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="video" data-title="javascript crash course">
+      <img src="https://picsum.photos/500/300?3" class="thumbnail">
+      <div class="video-info">
+        <img src="https://i.pravatar.cc/35?3" class="channel-img">
+        <div>
+          <h4>JavaScript Crash Course</h4>
+          <p>Programming Hub</p>
+          <p>2M views • 5 days ago</p>
+        </div>
+      </div>
+    </div>
+
+  </main>
+</div>
+
+<!-- LOGIN MODAL -->
+<div class="modal" id="loginModal">
+  <div class="modal-content">
+    <h3>Login</h3>
+    <input type="text" placeholder="Email"><br><br>
+    <input type="password" placeholder="Password"><br><br>
+    <button>Login</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
